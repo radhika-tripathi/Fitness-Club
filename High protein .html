@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High-Protein Diet Chart</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .content-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .content-box {
+            background: white;
+            margin: 20px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            max-width: 500px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Georgia', serif;
+            font-size: 18px;
+        }
+        .content-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+        }
+        .content-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: #4CAF50;
+        }
+        .diet-chart {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .diet-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .diet-item {
+            background: white;
+            margin: 20px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            max-width: 350px;
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+            font-size: 18px;
+        }
+        .diet-item:hover {
+            transform: scale(1.1);
+        }
+        .diet-item img {
+            border-radius: 15px;
+            margin-top: 15px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>High-Protein Diet Chart</h1>
+        <p>Boost your fitness with a protein-rich diet plan.</p>
+    </header>
+    
+    <section class="content-container">
+        <div class="content-box">
+            <h2>What is a High-Protein Diet?</h2>
+            <p>A high-protein diet focuses on consuming foods rich in protein to promote muscle growth, weight loss, and overall health. Proteins are essential macronutrients that help repair tissues, produce enzymes and hormones, and support metabolic functions.</p>
+        </div>
+        <div class="content-box">
+            <h2>Benefits of a High-Protein Diet</h2>
+            <ul>
+                <li><strong>Muscle Growth:</strong> Helps in building and repairing muscles.</li>
+                <li><strong>Weight Management:</strong> Keeps you fuller for longer, reducing unnecessary cravings.</li>
+                <li><strong>Metabolism Boost:</strong> Increases calorie burning and improves metabolic rate.</li>
+                <li><strong>Improved Recovery:</strong> Aids in faster recovery after workouts.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="diet-chart">
+        <div class="diet-row">
+            <div class="diet-item">
+                <h2>Breakfast</h2>
+                <p>Oats with Milk & Nuts</p>
+                <img src="images/oats.jpg" alt="Oats">
+            </div>
+            <div class="diet-item">
+                <h2>Mid-Morning Snack</h2>
+                <p>Greek Yogurt with Fruits</p>
+                <img src="images/yogurt.jpg" alt="Greek Yogurt">
+            </div>
+            <div class="diet-item">
+                <h2>Lunch</h2>
+                <p>Grilled Paneer with Roti</p>
+                <img src="images/paneer.jpg" alt="Paneer Roti">
+            </div>
+        </div>
+        
+        <div class="diet-row">
+            <div class="diet-item">
+                <h2>Evening Snack</h2>
+                <p>Sprouts Salad</p>
+                <img src="images/sprouts.jpg" alt="Sprouts">
+            </div>
+            <div class="diet-item">
+                <h2>Dinner</h2>
+                <p>Dal with Brown Rice</p>
+                <img src="images/dal-rice.jpg" alt="Dal Rice">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

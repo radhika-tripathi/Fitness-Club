@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        * {
+            margin: 20;
+            padding: 20;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;}
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            justify-content: center;
+            align-items: center;
+            height: 100vh;}
+.signup-container {
+    background: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;}
+    h2 {
+        margin-bottom: 50px;
+        font-weight: 600;}
+        form input {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            outline: none;
+            transition: 0.3s;}
+            form input:focus {
+                border-color: #007bff;
+                box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);}
+                button {
+                    width: 100%;
+                    padding: 12px;
+                    border: none;
+                    border-radius: 8px;
+                    background: linear-gradient(90deg, #007bff, #0056b3);
+                    color: white;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: 0.3s;}
+                    button:hover {
+                        background: linear-gradient(90deg, #8588d2, #0041a3);}
+                        p {
+                            margin-top: 15px;
+                            font-size: 14px;}
+                            p a {
+                                color: #8ab9e8;
+                                text-decoration: none;
+                                font-weight: 600;}
+                                p a:hover {
+                                    text-decoration: underline;}
+</style>
+ </head>
+    <body>
+        <div class="signup-container">
+            <h2>Sign Up</h2>
+            <form>
+            <input type="email" placeholder="Enter Email" required>
+            <input type="password" placeholder="Enter Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    <!-- Link the JavaScript file here -->
+    <script src="signup.js"></script>
+</body>
+</html>

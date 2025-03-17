@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ececec;
+            text-align: center;
+            background-image: url('image.png'); /* Path to your image */
+            background-size: cover; /* Makes the image cover the entire screen */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents repeating */
+            height: 100vh; /* Makes sure it covers the full viewport height */
+        }
+        .hero {
+            background: url('image.png') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+        .btn {
+            background: #1abc9c;
+            color: white; 
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #16a085;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .about-image, .service img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+        }
+        .services-section {
+            background: rgb(221, 223, 221);
+            padding: 50px 0;
+        }
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service {
+            width: 30%;
+            margin: 10px;
+            cursor: pointer;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .workout-plan {
+            display: none;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+            margin-top: 20px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Fitness Club</h1>
+            <p>Your journey to a healthier life starts here.</p>
+            <p style="background-image: url('about.jpg');"></p>
+            
+
+            <a href="#about" class="btn">Get Started</a>
+        </div>
+    </header>
+    
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At Fitness Club, we are committed to helping you achieve your fitness goals through expert guidance, tailored workout plans, and a supportive community.</p>
+            <img src="" alt="Fitness Training" class="about-image">
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-container">
+                <div class="service" onclick="toggleWorkoutPlan()">
+                    <img src="workout.jpg" alt="Workout Plan">
+                    <a href="training.html" style="text-decoration: none; color: inherit;">
+                        <div class="service-box">
+                            <h3>Personalized Workout Plans</h3>
+                            <p>Get customized workouts that fit your fitness level and goals.</p>
+                        </div>
+                    </a>
+                    
+                </div>
+                <a href = "training.html"></a>
+                <div class="service">
+                    <img src="nutrition.jpg" alt="Nutrition Guide">
+                    <a href="nutrition.html" style="text-decoration: none; color: inherit;">
+                        <div class="service-box">
+                            <h3>Nutrition Guidance</h3>
+                            <p>Learn how to eat right with our expert meal plans.</p>
+                        </div>
+                    </a>
+                    
+            
+                </div>
+                <div class="service">
+                    <img src="community.jpg" alt="Community Support">
+                    <h3>Community Support</h3>
+                    <p>Join a community of like-minded individuals to stay motivated.</p>
+                </div>
+            </div>
+            <div class="workout-plan" id="workout-plan">
+                <h3>Workout Plan Details</h3>
+                <p>This plan includes strength training, cardio exercises, and flexibility workouts tailored to your needs.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Fitness Club.</p>
+    </footer>
+
+    <script>
+        function toggleWorkoutPlan() {
+            var plan = document.getElementById("workout-plan");
+            if (plan.style.display === "none" || plan.style.display === "") {
+                plan.style.display = "block";
+            } else {
+                plan.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

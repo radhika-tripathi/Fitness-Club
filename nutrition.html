@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Guidance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #28a745;
+            color: white;
+            padding: 20px;
+            font-size: 1.5em;
+        }
+
+        .nutrition-info, .meal-plans, .quote {
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #28a745;
+        }
+
+        .meal {
+            background: #f4f4f4;
+            padding: 15px;
+            margin: 10px auto;
+            border-radius: 8px;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nutrition Guidance</h1>
+        <p>Learn how to eat right with our expert meal plans.</p>
+    </header>
+
+    <section class="nutrition-info">
+        <h2>Why Nutrition Matters?</h2>
+        <p>Proper nutrition fuels your workouts, boosts energy, and helps in muscle recovery. A balanced diet is the key to achieving your fitness goals.</p>
+    </section>
+
+    <section class="meal-plans">
+        <h2>Our Meal Plans</h2>
+
+        <a href="High-Protein Diet .html"></a> 
+        <div class="meal">
+            <a href="High protein .html" style="text-decoration: none; color: inherit;">
+            <h3>High-Protein Diet</h3>
+            <p>Great for muscle building and strength training.</p>
+        </div>
+        <div class="meal">
+            <h3>Weight Loss Plan</h3>
+            <p>Low-calorie meals to help you lose weight in a healthy way.</p>
+        </div>
+        <div class="meal">
+            <h3>Balanced Diet</h3>
+            <p>Includes proteins, carbs, and healthy fats for overall wellness.</p>
+        </div>
+    </section>
+
+    <section class="quote">
+        <h2>Nutrition Quote</h2>
+        <p id="nutrition-quote"></p>
+    </section>
+
+    <script>
+        const quotes = [
+            "Eat good, feel good!",
+            "Your body is a reflection of what you eat.",
+            "Healthy eating is a lifestyle, not a diet.",
+            "Fuel your body with the right nutrients."
+        ];
+
+        document.getElementById("nutrition-quote").innerText = quotes[Math.floor(Math.random() * quotes.length)];
+    </script>
+
+</body>
+</html>

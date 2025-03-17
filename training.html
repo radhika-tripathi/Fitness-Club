@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Page - Fitness Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fitness Training</h1>
+        <p>Choose your workout and start training today!</p>
+    </header>
+    
+    <section class="categories">
+        <div class="category" id="cardio">
+            <h2>Cardio Workouts</h2>
+            <p>Boost your stamina with these heart-pumping exercises.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hzZpV3tYaBo" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2MoGxae-zyo" frameborder="0" allowfullscreen></iframe>
+            <button class="join-btn">Join Now</button>
+        </div>
+
+        <div class="category" id="strength">
+            <h2>Strength Training</h2>
+            <p>Build muscle and get stronger with these workouts.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/U0bhE67HuDY" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fMPoCc78v0g" frameborder="0" allowfullscreen></iframe>
+            <button class="join-btn">Join Now</button>
+        </div>
+
+        <div class="category" id="yoga">
+            <h2>Yoga Sessions</h2>
+            <p>Relax, stretch, and strengthen with yoga.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/v7AYKMP6rOE" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oBu-pQG6sTY" frameborder="0" allowfullscreen></iframe>
+            <button class="join-btn">Join Now</button>
+        </div>
+    </section>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #ff6b6b;
+            color: white;
+            padding: 20px;
+        }
+        .categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .category {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+        .join-btn {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .join-btn:hover {
+            background: #e63946;
+        }
+    </style>
+</body>
+</html>
