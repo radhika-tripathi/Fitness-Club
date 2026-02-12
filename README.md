@@ -1,2 +1,19 @@
-# Fitness-Club
-A fitness website is an online platform designed to provide users with resources, tools and guidance for achieving their health and wellness goals. 
+# Fitness Club Website
+
+A responsive fitness website developed using HTML, CSS, JavaScript and Firebase.
+
+## Features
+- Responsive Design
+- BMI Calculator
+- Login & Signup System
+- Membership Form
+- Contact Form
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- Firebase
+
+## Live Demo
+https://inspiring-praline-cfebab.netlify.app
